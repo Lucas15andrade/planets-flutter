@@ -10,6 +10,8 @@ class HomePage extends StatelessWidget {
         children: <Widget>[
           GradientAppBar("Planetas"),
           HomePageBody(),
+          HomePageBody(),
+          HomePageBody(),
         ],
       )
     );
