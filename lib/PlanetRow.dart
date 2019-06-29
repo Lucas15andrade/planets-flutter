@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:planets/PlanetThumbnail.dart';
 import 'package:planets/planetCard.dart';
+import 'planets.dart';
 
 class PlanetRow extends StatelessWidget {
+
+  final Planet planet;
+
+  PlanetRow(this.planet);
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -13,7 +19,7 @@ class PlanetRow extends StatelessWidget {
       child: Stack(
         children: <Widget>[
           PlanetCard(),
-          PlanetThumbnail(),
+          PlanetThumbnail(planet),
         ],
       ),
     );
